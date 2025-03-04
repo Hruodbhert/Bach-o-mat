@@ -1,6 +1,7 @@
 # Bach-o-mat: Electromechanical MIDI Player for Keyboards
 
-![Bach-o-mat on a Piano](hardware/assembly_media/device_on_piano_2.png)
+| ![](hardware/assembly_media/device_on_piano_2.png) | ![](hardware/assembly_media/complete_device_2.png) |
+| --------------------------- | --------------------------- |
 
 Bach-o-mat is an open-source electromechanical device designed to play **pipe organs**, but it can also be used on any **keyboard instrument**. It operates using **Arduino and micro servomotors**, allowing it to play music by interfacing with a **MIDI control device**.
 
@@ -46,7 +47,7 @@ To build Bach-o-mat, follow these steps:
 ## Demonstration
 A video demonstration of Bach-o-mat in action is available:
 
-[![Setup on Organ Playing](hardware/assembly_media/7_setup_on_organ_playing.mp4)](hardware/assembly_media/7_setup_on_organ_playing.mp4)
+[![Setup on Organ Playing](images/youtube-thumbnail.png)](https://youtu.be/sfZ5kHSBi4M?si=fCr5qvPlyGegtceW)
 
 ## Future Improvements
 - **Bluetooth connectivity** for wireless control
