@@ -47,7 +47,7 @@ To build Bach-o-mat, follow these steps:
 ## Demonstration
 A video demonstration of Bach-o-mat in action is available:
 
-[![Setup on Organ Playing](hardware\assembly_media\thumbnail.png)](https://youtu.be/sfZ5kHSBi4M?si=CWz8P8_79pBXwW5q)
+[![Setup on Organ Playing](hardware/assembly_media/thumbnail.png)](https://youtu.be/sfZ5kHSBi4M?si=CWz8P8_79pBXwW5q)
 
 ## Future Improvements
 - **Bluetooth connectivity** for wireless control
