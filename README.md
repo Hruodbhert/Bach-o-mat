@@ -14,7 +14,7 @@ A control device (such as a **PC or smartphone**) connects to Bach-o-mat via **U
 
 Originally developed for **58-note keyboards**, a standard commonly used in **pipe organs until the late 19th century**, Bach-o-mat is built on a **modular architecture**:
 
-- Each **octave of natural keys** and **accidental keys** is handled by separate mechanical modules.
+- Each **octave of keys** is handled by separate mechanical modules.
 - Modules can be easily **combined** and **repositioned** to fit keyboards of different sizes and also with **different key widths**.
 - **Sliding side supports** can be employed in order to freely match the layout of any keyboard instrument.
 
