@@ -2,11 +2,13 @@
 
 This is the **original mechanical version** of the Bach-o-mat, designed for **58-key pipe organ-style keyboards**.
 
+<img src="assembly_media/complete_device_1.png" height="300"/> <img src="assembly_media/complete_device_2.png" height="300"/>
+
 ---
 
 ## Key Features
 
-- Supports **58 keys** (standard in 19th-century pipe organs)
+- Supports **58 keys**
 - **Modular structure**: Separate modules for each octave of natural and accidental keys
 - **Adjustable horizontal spacing** for compatibility with various key widths from ... mm to ... mm
 - **Sliding support bars** for flexible placement across different instruments
@@ -27,11 +29,13 @@ v1/
 
 ---
 
-##️ Assembly Overview
+## Assembly Overview
 
 Each octave consists of:
 - A **natural keys module** (white keys)
 - An **accidental keys module** (black keys)
+
+For both natural keys and accidental keys modules there is a shorter model for the last octave which has only 10 notes.
 
 These modules can be **replicated and aligned** to form the full 58-key span.
 
@@ -45,24 +49,17 @@ The servos are housed in a base layer and press the keys from above using improv
 
 ## Compatibility
 
-This version is intended for:
-
-
----
-
-## Fabrication Notes
-
-- **3D printing** recommended in PLA or PETG with 0.2 mm layer height
-- **Laser cutting** files compatible with 3 mm acrylic or MDF
-- All parts are dimensioned in **millimeters**
+Thanks to the adaptibility of its supports this version is intended for being carryed in different places and used to play a wide range of disparate keyboard instruments.
 
 ---
 
 ## Reference Images
 
-| Assembled Device on Organ | Full Module View |
-|---------------------------|------------------|
-| ![](media/device_on_piano_2.png) | ![](media/complete_device_2.png) |
+| Description | Picture |
+|-------------|---------|
+| Assembled Device on Piano  | <p align="center"><img src="assembly_media/6_completed2.jpg" height="180"/></p> |
+| Assembled Device on Organ  | <p align="center"><img src="assembly_media/7_setup_on_organ.jpg" height="180"/></p> |
+| Full Module View           | <p align="center"><img src="assembly_media/device_on_piano_2.png" height="180"/></p> |
 
 ---
 
