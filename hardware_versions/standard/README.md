@@ -49,7 +49,7 @@ The servos are housed in a base layer and press the keys from above using improv
 
 ## Compatibility
 
-Thanks to the adaptibility of its supports this version is intended for being carryed in different places and used to play a wide range of disparate keyboard instruments.
+Thanks to the adaptibility of its supports this version is intended for being carried in different places and used to play a wide range of disparate keyboard instruments.
 
 ---
 
