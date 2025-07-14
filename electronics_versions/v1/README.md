@@ -49,6 +49,8 @@ In terms of microcontrolers here we use
 
 > **Note:** Assign each Nano a distinct I²C address equal to `OFFSET_INDIRIZZI + INDIRIZZO_MANO`, where `INDIRIZZO_MANO` = 0…4.
 
+Here below you can see the wiring diagram of each Arduino Nano.
+
 <img src="schematics/slave_bb.jpg" height="300"/> <img src="schematics/slave_schem.jpg" height="300"/>
 
 ---
@@ -72,16 +74,16 @@ In terms of microcontrolers here we use
 - Play notes: the Micro reads MIDI Note On/Off, maps them to servos, and sends I²C commands to the Nanos.
 
 ## Calibration Mode
-The system enters in the calibrtion mode when, <u>at its startup</u>, the calibration switch is HIGH
+The system enters in the calibration mode when, <u>at its startup</u>, the calibration switch is HIGH
 Arduino Micro listens on Serial @9600 bps and forwards setup commands over I²C.
 Arduino Nano enters setup to map servo angles and save them to EEPROM.
 
-**Workflow**:
-	Send 3–4 byte packets over Serial to the Micro:
-	- operation byte (1=push/release, 2=set angles, 3=set+save)
-	- servo_num (0…11)
-	- data_1 (off‐angle)
-	- [data_2] (delta_angle, only for op≠1)
+### Workflow
+Send 3–4 byte packets over Serial to the Micro:
+- operation byte (1=push/release, 2=set angles, 3=set+save)
+- servo_num (0…11)
+- data_1 (off‐angle)
+- [data_2] (delta_angle, only for op≠1)
 
 This operations can be done easily by using the [calibration_GUI_v1.py] (/calibration_GUI_v1.py) provided.
 
