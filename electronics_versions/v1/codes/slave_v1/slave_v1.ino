@@ -1,3 +1,15 @@
+/*
+ * Slave boards code of Bach-o-mat, firmware version "v1"
+ * This code is though to be uploaded on an Arduino Nano board which will receive push/relaese commands from an Arduino Micro board
+ * 
+ * GitHub repository:
+ * https://github.com/Hruodbhert/Bach-o-mat/
+ * 
+ * Authors: Giulio and Roberto Faure Ragani
+ * A.D. 2025
+ * 
+ */
+ 
 #include <Wire.h>
 #include <Servo.h>
 #include <EEPROM.h>

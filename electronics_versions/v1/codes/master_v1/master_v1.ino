@@ -1,3 +1,15 @@
+/*
+ * Master board code of Bach-o-mat, firmware version "v1"
+ * This code is though to be uploaded on an Arduino Micro board which will be a bridge between the PC that sends the MIDI commands and the Arduino Nano boards which push/realease the servos
+ * 
+ * GitHub repository:
+ * https://github.com/Hruodbhert/Bach-o-mat/
+ * 
+ * Authors: Giulio and Roberto Faure Ragani
+ * A.D. 2025
+ * 
+ */
+
 #include <MIDIUSB.h>
 #include <Wire.h>
 
@@ -35,7 +47,11 @@ void play(byte note, bool state) {
   Wire.beginTransmission(mano_from_servo(note) + OFFSET_INDIRIZZI);
   Wire.write((note % NOTE_PER_MANO) + 12 * (!state));
   Wire.endTransmission();
-
+/*
+ * The Micro sends just 1 byte to state which of the 12 servos the designated Nano has to push/release
+ * This byte contains the number of the chosen servo if it has to be pushed,
+ * it contains the number of the chosen servo + 12 if it has to be released
+ */
 }
 ////////////////////
 

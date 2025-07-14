@@ -7,6 +7,8 @@ In terms of microcontrolers here we use
 - **Master**: 1x Arduino Micro, which receives MIDI events over USB and routes them to the Nano boards.  
 - **Slaves**: 5× Arduino Nano, each controlling 12 servos (one octave of notes).
 
+<img src="schematics/schem.jpg" height="300"/>
+
 ---
 
 ## Table of Contents
@@ -53,6 +55,10 @@ Here below you can see the wiring diagram of each Arduino Nano.
 
 <img src="schematics/slave_bb.jpg" height="300"/> <img src="schematics/slave_schem.jpg" height="300"/>
 
+### Tips
+Servos consume some hundreds of mA each while working, so when multiple notes are pushed/realeased the total consumption can easily reach ~10A for some instants.
+Use a proper power supply and pay attention in cable diameters in order not to have voltage faults.
+
 ---
 
 ## Software Requirements
@@ -93,10 +99,7 @@ Exit calibration mode by switching to LOW the calibration switch: Nanos will loa
 
 ```
 v1/
-├── master_v1/
-│   └── master_v1.ino
-├── slave_v1/
-│   └── slave_v1.ino
+├── codes/ # .ino codes for both master and slave boards
 ├── schematics/ # Wiring diagrams
 ├── calibration_GUI_v1.py
 └── README.md # This file
