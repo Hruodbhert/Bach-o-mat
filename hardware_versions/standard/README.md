@@ -19,7 +19,7 @@ This is the **original mechanical version** of the Bach-o-mat, designed for **58
 ## Folder Contents
 
 ```
-v1/
+standard/
 ├── 3D_models/ # STEP files for all printed parts
 ├── 2D_designs/ # DXF files for laser-cut components
 ├── assembly_media/ # Images and diagrams
@@ -63,11 +63,12 @@ Thanks to the adaptibility of its supports this version is intended for being ca
 
 ---
 
-## Licensing
+## License
 
-All designs in this folder are released under the **GNU GPL v3 license**.  
-You're free to print, modify, and improve them — contributions welcome!
+Bach-o-mat is released under the **GNU General Public License**, making it freely available for modification and use. If you improve the project, consider contributing your modifications back to the community.
 
 ---
 
 For full documentation and software, return to the [main README](../../README.md).
+
+For any inquiries or contributions, please open an **Issue** or submit a **Pull Request**.
