@@ -14,12 +14,10 @@ In terms of microcontrolers here we use
 1. [Hardware Requirements](#hardware-requirements)  
 2. [Schematic & Wiring](#schematic--wiring)  
 3. [Software Requirements](#software-requirements)  
-4. [Installation](#installation)  
-5. [Usage](#usage)  
-6. [Calibration Mode](#calibration-mode)  
-7. [Repository Structure](#repository-structure)  
-8. [Contributing](#contributing)  
-9. [License](#license)  
+4. [Usage](#usage)  
+5. [Calibration Mode](#calibration-mode)  
+6. [Folder Contents](#folder-contents)
+7. [License](#license)  
 
 ---
 
@@ -51,6 +49,8 @@ In terms of microcontrolers here we use
 
 > **Note:** Assign each Nano a distinct I²C address equal to `OFFSET_INDIRIZZI + INDIRIZZO_MANO`, where `INDIRIZZO_MANO` = 0…4.
 
+<img src="schematics/slave_bb.svg" height="300"/> <img src="schematics/slave_schem.svg" height="300"/>
+
 ---
 
 ## Software Requirements
@@ -63,43 +63,43 @@ In terms of microcontrolers here we use
 
 ---
 
-## Usage
+# Usage
 
-# Play mode
+## Play mode
 - Ensure the calibration switch is LOW (play mode); the Micro’s LED will be OFF.
 - Connect the Arduino Micro to your PC via USB and the entire system to a 5V voltage source.
 - In your MIDI software, select "Arduino Micro" as MIDI output.
 - Play notes: the Micro reads MIDI Note On/Off, maps them to servos, and sends I²C commands to the Nanos.
 
-# Calibration Mode
+## Calibration Mode
 The system enters in the calibrtion mode when, <u>at its startup</u>, the calibration switch is HIGH
 Arduino Micro listens on Serial @9600 bps and forwards setup commands over I²C.
 Arduino Nano enters setup to map servo angles and save them to EEPROM.
 
- - **Workflow**
-		Send 3–4 byte packets over Serial to the Micro:
-		- operation byte (1=push/release, 2=set angles, 3=set+save)
-		- servo_num (0…11)
-		- data_1 (off‐angle)
-		- [data_2] (delta_angle, only for op≠1)
+**Workflow**:
+	Send 3–4 byte packets over Serial to the Micro:
+	- operation byte (1=push/release, 2=set angles, 3=set+save)
+	- servo_num (0…11)
+	- data_1 (off‐angle)
+	- [data_2] (delta_angle, only for op≠1)
 
-This operations can be done easily by using the calibration_GUI_v1.py provided.
+This operations can be done easily by using the [calibration_GUI_v1.py] (/calibration_GUI_v1.py) provided.
 
 Exit calibration mode by switching to LOW the calibration switch: Nanos will load saved angles and begin normal play.
 
 ## Folder Contents
 
 ```
-
 v1/
-├── Arduino-Micro/
-│   ├── OrganoMicro.ino
-│   └── README.md       ← Micro-specific instructions
-├── Arduino-Nano/
-│   ├── OrganoNano.ino
-│   └── README.md       ← Nano-specific instructions
-└── schematic/          ← Eagle/Kicad files or wiring photos
-
+├── master_v1/
+│   └── master_v1.ino
+├── slave_v1/
+│   └── slave_v1.ino
+├── schematics/
+│   ├── slave_bb.svg
+│   └── slave_schem.svg
+├── calibration_GUI_v1.py
+└── README.md # This file
 ```
 
 ## License
