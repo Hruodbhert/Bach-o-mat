@@ -49,7 +49,7 @@ In terms of microcontrolers here we use
 
 > **Note:** Assign each Nano a distinct I²C address equal to `OFFSET_INDIRIZZI + INDIRIZZO_MANO`, where `INDIRIZZO_MANO` = 0…4.
 
-<img src="schematics/slave_bb.svg" height="300"/> <img src="schematics/slave_schem.svg" height="300"/>
+<img src="schematics/slave_bb.jpg" height="300"/> <img src="schematics/slave_schem.jpg" height="300"/>
 
 ---
 
@@ -95,9 +95,7 @@ v1/
 │   └── master_v1.ino
 ├── slave_v1/
 │   └── slave_v1.ino
-├── schematics/
-│   ├── slave_bb.svg
-│   └── slave_schem.svg
+├── schematics/ # Wiring diagrams
 ├── calibration_GUI_v1.py
 └── README.md # This file
 ```
