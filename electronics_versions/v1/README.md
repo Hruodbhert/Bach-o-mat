@@ -7,7 +7,7 @@ In terms of microcontrolers here we use
 - **Master**: 1x Arduino Micro, which receives MIDI events over USB and routes them to the Nano boards.  
 - **Slaves**: 5× Arduino Nano, each controlling 12 servos (one octave of notes).
 
-<img src="schematics/schem.jpg" height="300"/>
+<img src="schematics/schem.jpg" height="400"/>
 
 ---
 
@@ -87,11 +87,11 @@ Arduino Nano enters setup to map servo angles and save them to EEPROM.
 ### Workflow
 Send 3–4 byte packets over Serial to the Micro:
 - operation byte (1=push/release, 2=set angles, 3=set+save)
-- servo_num (0…11)
+- servo_num (0... TOT_SERVO-1)
 - data_1 (off‐angle)
 - [data_2] (delta_angle, only for operation byte≠1)
 
-This operations can be done easily by using the [calibration_GUI_v1.py] (calibration_GUI_v1.py) provided.
+This operations can be done easily by using the [calibration_GUI_v1.py](./calibration_GUI_v1.py) provided.
 
 Exit calibration mode by switching to LOW the calibration switch: Nanos will load saved angles and begin normal play.
 
@@ -99,6 +99,7 @@ Exit calibration mode by switching to LOW the calibration switch: Nanos will loa
 
 ```
 v1/
+├── calibration_files/ # examples of files to be loaded to calibration_GUI_v1.py
 ├── codes/ # .ino codes for both master and slave boards
 ├── schematics/ # Wiring diagrams
 ├── calibration_GUI_v1.py
