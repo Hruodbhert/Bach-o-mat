@@ -1,3 +1,14 @@
+#
+# Calibration GUI for Bach-o-mat electronics v1
+#
+# GitHub repository:
+# https://github.com/Hruodbhert/Bach-o-mat/
+#
+# Authors: Giulio and Roberto Faure Ragani
+#
+# A.D. 2025
+#
+
 from tkinter import *
 from tkinter import ttk
 from tkinter import filedialog

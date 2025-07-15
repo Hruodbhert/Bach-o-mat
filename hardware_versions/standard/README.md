@@ -57,7 +57,7 @@ Here below you can find some exploded views for a better understanding of the as
 ## Compatibility
 
 Thanks to the adaptibility of its supports this version is intended for being carried in different places and used to play a wide range of disparate keyboard instruments.<br>
-3D printable modules are designed to be compatible with almost any keyboard, both historical and commercial, leaving just the duty to pay attention to where to screw them. They should also fit well with quite any commercial microservo available nowadays.<br>
+The 3D printable modules are designed to be compatible with almost any keyboard, both historical and commercial, leaving just the duty to pay attention to where to screw them. They should also fit well with quite any commercial microservo available nowadays.<br>
 The only non-standard components are the arms of the servos, which may change quite a lot among different models and brands. The 3D printable files provided have therefore a proper external shape, but it might be necessary to change the socket for the servo arm.
 
 ---
