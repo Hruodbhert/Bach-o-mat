@@ -44,8 +44,8 @@ Bach-o-mat/
 
 This directory contains **alternative mechanical versions** of Bach-o-mat:
 
-- `standard/`: Original version for 58-note keyboards, with sliding side supports and a horizontal depth of .... cm
-- `optimized/`: 58-notes keyboard version, with fixed supports and an optimized horizontal depth of .... cm
+- `standard/`: Original version for 58-note keyboards, with sliding side supports and a horizontal depth of 16 cm
+- `optimized/`: 58-notes keyboard version, with fixed supports and an optimized horizontal depth of 11.5 cm
 
 Each subfolder includes:
 - **3D models** for 3D printing
